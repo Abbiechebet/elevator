@@ -51,7 +51,7 @@ public class ElevatorController {
                     content = {@Content(mediaType = "application/json",schema = @Schema(implementation = Elevator.class))}),
             @ApiResponse(responseCode = "401",description = "Unauthorized user",content = @Content),
             @ApiResponse(responseCode = "404",description = "Elevator not found",content = @Content),
-            @ApiResponse(responseCode = "302",description = "No EleVator Found",content = @Content)})
+            @ApiResponse(responseCode = "302",description = "No Elevator Found",content = @Content)})
 
      @GetMapping("list")
     public ResponseEntity<?> findAll(){
